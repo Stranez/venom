@@ -16,6 +16,10 @@ body{
 }
 
 body{
+    background-image: url("../img/bg/bg-fon-1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     background-color: #14131A;
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -50,6 +54,9 @@ a{
     min-width: 1150px;
     overflow: hidden;
     position: relative;
+    background-image: url("../img/bg/blod.png");
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 .container{
@@ -98,4 +105,42 @@ a{
     font-size: 16px;
     line-height: 140%;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.button__group{
+    margin-top: 70px;
+}
+
+.button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button__icon,
+.button__text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button__text{
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 10px;
+}
+
+.button-primary{
+    color: #8D0019;
+    background-color: #fff;
+}
+
+.button-link{
+    color: #fff;
+}
+
+.venom-head{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
