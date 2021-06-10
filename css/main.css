@@ -54,9 +54,6 @@ a{
     min-width: 1150px;
     overflow: hidden;
     position: relative;
-    background-image: url("../img/bg/blod.png");
-    background-repeat: no-repeat;
-    background-position: top right;
 }
 
 .container{
@@ -143,4 +140,106 @@ a{
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.blod{
+    background-image: url("../img/bg/blod.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.content{
+    display: flex;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+.content__title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 21px;
+}
+
+.content__text{
+    max-width: 423px;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.content__subtitle{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+.list-column-2{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    max-width: 350px;
+}
+
+.list__item{
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.trailer{
+    margin-top: 33px;
+}
+
+.content .trailer{
+    width: 356px;
+    height: 205px;
+    background: url("../img/bg/trailer-cover.jpg") no-repeat center / contain;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trailer .play{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.trailer .play__icon{
+    transform: translate(1px, 2px);
+    width: 15px;
+    height: 15px;
+}
+
+.poster-wrapper{
+    display: flex;
+    align-items: start;
+}
+
+.poster{
+    width: 362px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.creators .content__subtitle{
+    margin-bottom: 5px;
+}
+
+.creators .list{
+    margin-bottom: 20px;
 }
