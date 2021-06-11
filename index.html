@@ -10,53 +10,88 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <div class="wrapper blod">
+<body class="blood">
+    <div class="container">
         <header class="header">
-            <div class="container">
-                <a href="index.html" class="logo__link">
-                    <img width="46" height="71" src="img/decor/logo.png" alt="logo: venom" class="logo__img">
-                </a>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="about.html" class="nav__link">о фильме</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="trailer.html" class="nav__link">трейлер</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="actors.html" class="nav__link">актеры</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="premier.html" class="nav__link">премьера</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <a href="index.html" class="logo-link">
+                <img width="46" height="71" src="img/decor/logo.png" alt="logo: venom" class="logo-image">
+            </a>
+            <nav class="nav">
+                <button class="menu-button">
+                    <span class="menu-button-text">меню</span>
+                    <img src="img/decor/burger-menu.svg" alt="icon: burger-menu" class="menu-button-icon">
+                </button>
+                <button class="menu-close">
+                    <span class="menu-close-text">закрыть</span>
+                    <img src="img/decor/arrow.svg" alt="icon: arrow" class="menu-close-icon">
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a href="about.html" class="nav-menu-link">О фильме</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="trailer.html" class="nav-menu-link">трейлер</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="actors.html" class="nav-menu-link">актеры</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="premier.html" class="nav-menu-link">премьера</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <section class="section">
-            <div class="container">
-                <div class="film">
-                    <div class="film__text">
-                        <div class="film__date">16 сентября 2021</div>
-                        <img src="img/decor/Venom-2.svg" alt="logo: venom-2" class="film__img">
-                        <p class="film__description">В настырном журналисте по-прежнему живет симбиот.Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
-                    </div>
-                    <div class="button__group">
-                        <button class="button button-primary">
-                            <img width="15" src="img/decor/play.svg" alt="icon: play" class="button__icon">
-                            <span class="button__text">смотреть трейлер</span>
-                        </button>
-                        <a href="trailer.html" class="button button-link">
-                            <img width="15" src="img/decor/ticket.svg" alt="icon: ticket" class="button__icon">
-                            <span class="button__text">билеты на премьеру</span>
-                        </a>
-                    </div>
-                </div>
+        <div class="film">
+            <div class="film-text">
+                <span class="film-date">16 сентября 2021</span>
+                <img src="img/decor/Venom-2.svg" alt="logo: venom-2" class="film-logo">
+                <p class="film-description">
+                    В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.
+                </p>
             </div>
-        </section>
-        <img src="img/bg/venom-head.png" alt="background: venov-head" class="venom-head">
+            <!-- /.film-text -->
+            <div class="button-group">
+                <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="button button-primary">
+                    <img width="15" src="img/decor/play.svg" alt="icon: play" class="button-icon">
+                    <span class="button-text">смотреть трейлер</span>
+                </a>
+                <a href="#" class="button button-link">
+                    <img width="15" src="img/decor/ticket.svg" alt="icon: ticket" class="button-icon">
+                    <span class="button-text">билеты на премьеру</span>
+                </a>
+            </div>
+            <!-- /.button-group -->
+        </div>
+        <!-- /.film -->
     </div>
+    <!-- /.container -->
+    <img src="img/bg/venom.png" alt="" class="venom">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
+<!-- |c - делает комент под закрывающим тегом -->
+<!--
+    Githab
+    создание репозитория
+        1- Repositories кнопка New
+        2- ввести имя репозитория
+        3- поставить галочку Public
+        4- поставить галочку Add a README file
+        5- нажать Create repositorise
+    добавление файла в репозиторий
+        1- Add file
+        2- Upload files
+        3- перенести файлы
+        4- Commit changes
+    настройка что бы можно было показать как сайт
+        1- Setting
+        2- Pages
+        3- В Sourse выбрать main и нажать save
+    залив обновления на Githab
+        1- Add file
+        2- Upload files
+        3- Commit changes
+ -->
